@@ -1,13 +1,25 @@
 import React, {useCallback, useState} from 'react';
 import { TextInput, View, StyleSheet } from 'react-native';
+import Product from "../data/products.json";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 function Search() {
     const [value, setValue] = useState('')
+
+    const handleChange = useCallback((e) =>{
+        setValue(e.nativeEvent.text)
+        // Filter products based on search query
+        const filteredProducts = Product.products.filter((item) =>
+          item.name.toLowerCase().includes(value.toLowerCase())
+        );
+        console.log(filteredProducts)
+    }, [])
+
+    
     return (
         <View style={styles.container}>
             <Icon name="search" size={20} color="#000" style={styles.icon} />
-            <TextInput style={styles.input} onChange={(e) => handleChange} placeholder="Search" />
+            <TextInput style={styles.input} onChange={(e) => handleChange(e)} placeholder="Search" />
         </View>
     );
 }

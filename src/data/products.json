@@ -90,8 +90,8 @@
     },
     {
       "id": 12,
-      "name": "Portabello Mushroom Burger",
-      "description": "Grilled portabello mushroom cap with Swiss cheese, roasted red peppers, lettuce, and basil pesto.",
+      "name": "Portable Mushroom Burger",
+      "description": "Grilled portable mushroom cap with Swiss cheese, roasted red peppers, lettuce, and basil pesto.",
       "price": 10.49,
       "reading": 4.5,
       "image": "https://images.fineartamerica.com/images-medium-large-5/portobello-mushroom-burger-lew-robertson.jpg"
@@ -114,7 +114,7 @@
     },
     {
       "id": 15,
-      "name": "Caresse Burger",
+      "name": "Caress Burger",
       "description": "Beef patty topped with fresh mozzarella, sliced tomatoes, basil leaves, and balsamic glaze.",
       "price": 10.49,
       "reading": 4.5,
